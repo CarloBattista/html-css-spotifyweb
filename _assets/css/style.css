@@ -568,6 +568,13 @@ body {
     .bg_bar {
         width: 100%;
     }
+    .Info_music {
+        font-size: 14px;
+    }
+    
+    .song_name {
+        font-size: 8px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
