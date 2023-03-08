@@ -331,7 +331,7 @@ body {
 
 .box_cover {
     width: 42px;
-    height: 42px;
+    height: auto;
     margin-right: 15px;
 }
 
@@ -428,8 +428,9 @@ body {
 }
 
 .bg_bar {
-    max-width: 550px;
+    max-width: 500px;
     min-width: 150px;
+    width: 450px;
     height: 6px;
     border-radius: 6px;
     background-color: #5A5A5A;
@@ -554,6 +555,20 @@ body {
 }
 
 /* Media Query */
+
+@media only screen and (max-width: 900px) {
+    .container_volume_range,
+    .box_backward,
+    .box_forward{
+        display: none;
+    }
+    .box_cover {
+        margin-right: 10px;
+    }
+    .bg_bar {
+        width: 100%;
+    }
+}
 
 @media only screen and (max-width: 500px) {
     .sideBar {
