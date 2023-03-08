@@ -600,6 +600,11 @@ body {
     background-color: #1db954;
 }
 
+/* Container Music */
+.container_heading_music_row{
+    margin-bottom: 20px;
+}
+
 /* Media Query */
 
 @media only screen and (max-width: 900px) {
