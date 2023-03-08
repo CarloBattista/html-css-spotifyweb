@@ -142,7 +142,7 @@ body {
     content: '';
     width: 3px;
     height: 100%;
-    background-color: #ADFF2F;
+    background-color: #1db954;
 }
 
 .container_list {
@@ -324,55 +324,63 @@ body {
     background-color: #282828;
 }
 
-.nowPlaying_music{
+.nowPlaying_music {
     display: flex;
     align-items: center;
 }
 
-.box_cover{
+.box_cover {
     width: 42px;
     height: 42px;
     margin-right: 15px;
 }
 
-.box_cover img{
+.box_cover img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.Info_music{
+.Info_music {
     color: #fff;
     font-size: 16px;
     font-weight: 600;
 }
 
-.song_name{
+.song_name {
     color: #aaa;
     font-size: 13px;
     font-weight: 500;
 }
 
-.container_icon{
+.container_icon {
     margin-left: 35px;
 }
 
-.container_icon .fa-regular{
+.container_icon .fa-regular {
     color: #aaa;
     margin-right: 10px;
     cursor: pointer;
 }
 
-.container_icon .fa-regular:hover{
+.container_icon .fa-regular:hover {
     color: #fff;
 }
 
-.player_controls{
+/* Player controls */
+.controls_center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player_controls {
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
 }
 
-.box_icon_control{
+.box_icon_control {
     background-color: transparent;
     width: 40px;
     height: 40px;
@@ -385,31 +393,90 @@ body {
     justify-content: center;
 }
 
-.box_icon_control:last-child{
+.box_icon_control:last-child {
     margin-right: 0;
 }
 
-.box_icon_control.box_play_focussed{
+.box_icon_control.box_play_focussed {
     background-color: #fff;
     transition: transform 250ms ease;
 }
 
-.box_play_focussed:hover{
+.box_play_focussed:hover {
     transform: scale(1.1);
 }
 
-.box_icon_control .fa-solid{
+.box_icon_control .fa-solid {
     opacity: .7;
     transition: opacity 250ms ease;
 }
 
-.box_icon_control:hover .fa-solid{
+.box_icon_control:hover .fa-solid {
     opacity: 1;
 }
 
-.box_play_focussed .fa-play{
+.box_play_focussed .fa-play {
     color: #000;
     opacity: 1;
+}
+
+.container_progressBar{
+    position: relative;
+    width: 100%;
+}
+
+.bg_bar{
+    max-width: 550px;
+    min-width: 150px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: #5A5A5A;
+}
+
+.progressB{
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.dots_progress{
+    position: absolute;
+    top: -5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transform: translateX(70px);
+    background-color: #fff;
+    display: none;
+}
+
+.container_progressBar:hover .dots_progress{
+    background-color: #fff;
+    display: block;
+}
+
+.container_progressBar:hover .progressB{
+    background-color: #1db954;
+}
+
+/* Progress Bar */
+
+.progressBar{
+    display: flex;
+    align-items: center;
+}
+
+.container_progressBar{
+    margin: 0 20px;
+}
+
+.timeProgress{
+    color: #aaa;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 /* Main */
