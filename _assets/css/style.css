@@ -75,12 +75,14 @@ body {
 }
 
 .btn:focus {
+    background-color: #1db954;
+    color: #fff;
     transform: scale(0.9);
     opacity: .6;
 }
 
 .btn:active {
-    background-color: #ADFF2F;
+    background-color: #1db954;
 }
 
 .btn_white {
